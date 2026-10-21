@@ -1,0 +1,104 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+  width: 80%;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+tr {
+  background-color: #f6f6f6;
+}
+
+th {
+  background-color: #c9c9ff;
+  color: whit;
+}
+th, td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.deleteBtn{
+    border: none;
+        padding: 14px 35px;
+    background-image: linear-gradient(67deg,#ff5050,#fbe4bf);
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+    font-weight: bold;
+    text-shadow: 0px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.updateBtn{
+    border: none;
+        padding: 14px 35px;
+    background-image: linear-gradient(67deg,#00ff9f,#bfdffb);
+    margin-right: 4px;
+    color: white;
+    font-size: 16px;
+    border-radius: 7px;
+    font-weight: bold;
+    text-shadow: 0px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.pending{
+    background-color: rgb(67, 148, 255);
+}
+.dueTomorrow{
+    background-color: orange;
+}
+.Accomplished{
+    background-color: #00ff9f;
+}
+.Unaccomplished{
+    background-color: #ff5050;
+}
+
+.updateBtn:disabled{
+    background-image: linear-gradient(67deg,#858a88,#ffffff);
+
+}
+
+.body{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.inputs{
+  display: flex;
+    flex-direction: column;
+}
+.field{
+  width: 45vh;
+    height: 5vh;
+    border: none;
+    background: #efefef;
+    border-radius: 4px;
+    padding-inline: 13px;
+}
+
+#taskList{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+form button{
+      border: solid #e7e7e7 4px;
+    /* background-image: linear-gradient(45deg, #b9b9b9, transparent); */
+    background-color: blue;
+    color: white;
+    height: 7vh;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 9px;
+}
+
+form{
+  display: flex;
+    flex-direction: column;
+}

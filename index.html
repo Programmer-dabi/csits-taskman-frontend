@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="body">
+
+    <h1>Task Management</h1>
+
+    <form id="form" method="post" action="/">
+      <div class="inputs">
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" class="field" name="taskName" placeholder="Enter task name" required>
+      </div>
+
+      <div class="inputs">
+        <label for="subOrganization">Sub Organization:</label>
+        <select name="subOrganization" id="subOrganization" class="field">
+          <option value="All">All</option>
+          <option value="Exapand Dev">Exapand Dev</option>
+          <option value="Programming">Programming</option>
+          <option value="Multimedia">Multimedia</option>
+          <option value="Network Security">Network Security</option>      
+        </select>
+      </div>
+
+      <div class="inputs">
+        <label for="dueDate">Due Date:</label>
+        <input type="datetime-local" class="field" id="dueDate" name="dueDate" required>
+      </div>
+
+      <p id="validation" role="alert"></p>
+
+      <button type="submit">Add Task</button>
+    </form>
+        <label for="filter">Filter:</label>
+        <select name="filter" id="filter" class="field">
+          <option value="All">All</option>
+          <option value="Pending">Pending</option>
+          <option value="Due Tommorrow">Due Tommorrow</option>
+          <option value="Accomplished">Accomplished</option>
+          <option value="Unaccomplished">Unaccomplished</option>      
+        </select>
+    <section id="taskList">
+    <h2>Task List</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Task Name</th>
+            <th>Sub Organization</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+
+        <tbody id="taskTableBody">
+        <!-- JavaScript adds task rows here -->
+        </tbody>
+    </table>
+    </section>
+    <!-- <a href="http://localhost:8000/">test</a> -->
+  <script src="js/script.js"></script>
+  </div>
+</body>
+</html>
