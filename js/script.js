@@ -145,8 +145,8 @@ function List(taskName, subOrg, dueDate, status,id) {
         }
     });
     deleteTaskBtn.addEventListener('click',()=>{
-      deleteTask(id);
-            showListdata();
+            deleteTask(id);
+            
 
     });
 
@@ -176,6 +176,8 @@ async function sendData(data) {
       }
 
     const result = await response.json(); // Parse the server's JSON response
+            showListdata();
+
     console.log(result);
 
   } catch (error) {
@@ -235,6 +237,8 @@ async function updateStatus(status, taskId){
 
           throw new Error(`HTTP error! Status: ${response.status}`);
       }
+            showListdata();
+
   }catch(error){
     console.log(error);
   }
@@ -255,7 +259,7 @@ async function deleteTask(taskId){
 
           throw new Error(`HTTP error! Status: ${response.status}`);
       }
-      
+      showListdata();
   }catch(error){
     console.log(error);
   }
